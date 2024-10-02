@@ -7,6 +7,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed;
     private Rigidbody2D rb2d;
 
+    public float Speed {  get { return speed; } }
+
+    public void Config(float speed)
+    {
+        this.speed = speed;
+    }
+
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
