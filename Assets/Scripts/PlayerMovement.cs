@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
         this.speed = speed;
     }
 
+
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();

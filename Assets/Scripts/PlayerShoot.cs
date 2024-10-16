@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerShoot : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
-    private int bullets;
+    [SerializeField] private int bullets;
     private Camera cam;
 
     public int Bullets {  get { return bullets; }  }

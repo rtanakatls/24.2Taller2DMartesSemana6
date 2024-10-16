@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    private LifeController lifeController;
+    private PlayerLifeController lifeController;
 
     private void Awake()
     {
-        lifeController = GetComponent<LifeController>();
+        lifeController = GetComponent<PlayerLifeController>();
     }
 
     private void TakeDamage(int damage)
